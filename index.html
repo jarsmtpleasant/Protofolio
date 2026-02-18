@@ -1,170 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
     <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #EAEAEA;
-            background-color: #020403;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header */
-        header {
-            background-color: #1A2324;
-            color: #EAEAEA;
-            padding: 1rem 0;
-        }
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-        nav ul li {
-            margin-left: 20px;
-        }
-        nav ul li a {
-            color: #435146;
-            text-decoration: none;
-        }
-        
-        /* Sections */
-        section {
-            padding: 2rem 0;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        
-        /* About */
-        #about {
-            background-color: #435146;
-        }
-        #about .container {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        #about img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 2rem;
-        }
-        
-        /* Skills */
-        #skills {
-            background-color: #f4f4f4;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-        .skill {
-            background-color: #435146;
-            padding: 1rem;
-            text-align: center;
-            border-radius: 5px;
-        }
-        
-        /* Portfolio */
-        #portfolio {
-            background-color: #435146;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-        }
-        .project {
-            background-color: #1C1C1C;
-            padding: 1rem;
-            border-radius: 5px;
-        }
-        .project img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        
-        /* Contact */
-        #contact {
-            background-color: #1B2922;
-            color: #435146;
-        }
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            border: none;
-            border-radius: 5px;
-        }
-        form button {
-            background-color: #435146;
-            color: #1B2922;
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #222;
-            color: #1B2922;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            header .container {
-                flex-direction: column;
-            }
-            nav ul {
-                margin-top: 1rem;
-            }
-            nav ul li {
-                margin-left: 0;
-                margin-right: 20px;
-            }
-            #about .container {
-                flex-direction: column;
-                text-align: center;
-            }
-            #about img {
-                margin-right: 0;
-                margin-bottom: 1rem;
-            }
-        }
-    </style>
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #020403;
+    color: #EAEAEA;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #1A2324;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #EAEAEA;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #EAEAEA;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #5F2E1B;
+}
+
+/* Sections */
+section {
+    padding: 70px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5F2E1B;
+}
+
+/* About */
+#about {
+    background-color: #1A2324;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#about img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 3px solid #5F2E1B;
+}
+
+/* Skills */
+#skills {
+    background-color: #020403;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background-color: #1A2324;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #435146;
+}
+
+/* Portfolio */
+#portfolio {
+    background-color: #1A2324;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #020403;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Contact */
+#contact {
+    background-color: #020403;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1A2324;
+    color: #EAEAEA;
+}
+
+form button {
+    background-color: #5F2E1B;
+    color: #EAEAEA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #435146;
+}
+
+/* Footer */
+footer {
+    background-color: #1A2324;
+    text-align: center;
+    padding: 20px 0;
+    color: #AAAAAA;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+</style>
 </head>
 <body>
+     
     <header>
         <div class="container">
             <h1>My Portfolio</h1>
@@ -178,15 +224,17 @@
             </nav>
         </div>
     </header>
-
+      <section class="hero">
+   <h2>Hello, I'm Jars</h2>
+   <p>I create modern and beautiful websites.</p>
+   <a href="#">Hire Me</a>
+</section>
     <section id="about">
         <div class="container">
             <img src="https://via.placeholder.com/150" alt="Profile Picture">
             <div>
                 <h2>About Me</h2>
-                <p>Hello! I’m a passionate Web Developer dedicated to crafting modern, responsive, and user-friendly websites. 
-With strong skills in HTML, CSS, and JavaScript, I turn ideas into interactive digital experiences. 
-Let’s create something exceptional together.</p>
+                <p> “I am a passionate and dedicated learner who enjoys turning ideas into meaningful work. I always aim to grow, create, and deliver my best in every project I take on.”</p>
             </div>
         </div>
     </section>
